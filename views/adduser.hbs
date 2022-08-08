@@ -1,0 +1,24 @@
+<h3>Add New Student</h3>
+
+{{#if msg}}
+    <div>{{msg}}</div>
+{{/if}}
+
+<form method="post" action="/adduser" autocomplete="false">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name">
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="number" name="age">
+    </div>
+    <div>
+        <label for="city">City</label>
+        <input type="text" name="city">
+    </div>
+    <div>
+        <button type="submit">Save details</button>
+        <a href="/">Home</a>
+    </div>
+</form>
